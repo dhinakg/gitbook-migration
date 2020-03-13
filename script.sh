@@ -2,10 +2,9 @@
 shopt -s extglob
 
 echo "Downloading files"
-curl -o gitbook_files.zip https://github.com/dhinakg/gitbook-migration/archive/master.zip
+git clone https://github.com/dhinakg/gitbook-migration.git
 
-echo "Extracting files"
-unzip gitbook_files.zip
+echo "Moving files"
 mv gitbook_files/!(README.md|.travis.yml) .
 rm -r gitbook_files.zip gitbook_files
 
