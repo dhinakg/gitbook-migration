@@ -6,8 +6,8 @@ echo "Downloading files"
 git clone https://github.com/dhinakg/gitbook-migration.git
 
 echo "Moving files"
-echo "Test"
-unset -e
+echo "Test2"
+set +e
 mv gitbook-migration/!(README.md|.git|.|..) .
 set -e
 rm -rf gitbook-migration
