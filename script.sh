@@ -6,7 +6,7 @@ echo "Downloading files"
 git clone https://github.com/dhinakg/gitbook-migration.git
 
 echo "Moving files"
-mv gitbook-migration/!(README.md|.git) .
+mv gitbook-migration/!(README.md|.git|.|..) .
 rm -rf gitbook-migration
 
 echo "Installing dependencies"
